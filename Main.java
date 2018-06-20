@@ -15,8 +15,8 @@ public class Main {
     static int extraEncode =0;
 
     public static void main(String[] args) {
-        String Directory = "src/test2.txt";
-        String OutPutDirectory="src/test2.dat";
+        String Directory = "src/big.txt";
+        String OutPutDirectory="src/big.dat";
         String result="File Exception";
         String encodedString;
         int [] count = new int[256];
@@ -217,16 +217,16 @@ public class Main {
         fos.close();
     }
 
-    public static void writeToFile2(String outputdirectory , String s){
-        OutputStream fos = null;
-        try {
-            fos = new FileOutputStream(outputdirectory);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        int remainingBits=8;
-    }
+//    public static void writeToFile2(String outputdirectory , String s){
+//        OutputStream fos = null;
+//        try {
+//            fos = new FileOutputStream(outputdirectory);
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//
+//        int remainingBits=8;
+//    }
 
     public static void decodeHuffman(String encodedString, Node root){
         System.out.println("===============DECODED  STRING===============");
